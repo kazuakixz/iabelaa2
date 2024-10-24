@@ -12,15 +12,15 @@ function setup() {
 }
 
 function draw() {
-  background("white");
+  background("#E98EAD");
   let idade = campoIdade.value();
   let gostaDeRomanceAnime = campoFantasia.checked();
   let gostaDeAventura = campoAventura.checked();
   let recomendacao = geraRecomendacao(idade, gostaDeRomanceAnime, gostaDeAventura);
 
-  fill(color(76, 0, 115));
+  fill(color(144, 15, 127));
   textAlign(CENTER, CENTER);
-  textSize(38);
+  textSize(35);
   text(recomendacao, width / 2, height / 2);
 }
 
@@ -35,6 +35,7 @@ function geraRecomendacao(idade, gostaDeRomanceAnime, ) {
         } else{
          return "Uma Linda Mulher";
         }
+        
       } else {
         if (gostaDeRomanceAnime) {
           return "Olhos de Gato";
